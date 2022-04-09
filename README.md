@@ -1,42 +1,17 @@
-# path_planning
+# Zenith Robotics Workshop
 As a part of Zenith 2022, Tech Club conducted a series of workshops about using ROS and Gazebo to simulate path planning algorithms on a turtlebot.
 
-## Installation
+## Installation & Setup
+You can setup the required application and files, in two methods
 
-<details>
-<summary>Docker</summary>
-  
-### Requirements
+1. **Using Docker**
+    
+    Using docker images allow you to run the applications required on pretty much any of your favourite OS, be it windows, linux or mac. It also ensures that you don't run into any dependency issues. Follow the instructions below to setup a docker image which we have built with ROS and the other dependencies preinstalled.
+      
+    1. [Using Docker to setup ROS on Windows](Documentation/setup/docker/docker_windows)
+    2. [Using Docker to setup ROS on Linux](Documentation/setup/docker/docker_linux)
 
-- **OS:** Any system that supports [Docker](https://docs.docker.com/get-docker) should work (Linux, Windows, macOS).
+2. **Locally Installing**
 
-### Pre-built Docker Image
+    In case you have been using Ubuntu on a dual boot or on a virtual machine and would like to setup ROS locally on your system follow these [instructions](Documentation/setup/local_installation)
 
-The easiest way to try out this project is by using a pre-built Docker image that can be pulled from [Docker Hub](https://hub.docker.com/repository/docker/shankrith/path_planning).
-
-```bash
-docker pull shankrith/path_planning:0.1
-```
-
-For running of the container, you can use the included [docker/run.bash](docker/run.bash) script that is included with this repo.
-
-```bash
-<path_planning_dir>/docker/run.bash shankrith/path_planning:0.1
-```
-</details>
-
-<details>
-<summary>Local Installation</summary>
-  
-  ### Requirements
-  - **OS:** Ubuntu 20.04 (Focal)
-    - Others might work, but they were not tested. 
-  
-  ### Dependencies
-  These are the primary dependencies of this repository
-  1. ROS [Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
-  2. Turtlebot packages
-     * [Turtlebot Core](https://github.com/ROBOTIS-GIT/turtlebot3) Packages
-     * [Turtlebot Msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs) package
-     * [Turtlebot Simulation](https://github.com/ROBOTIS-GIT/turtlebot3_simulations) package
-</details>
