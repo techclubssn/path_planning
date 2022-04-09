@@ -62,13 +62,13 @@ Open Docker Desktop and a Powershell window. In Powershell,
 
 Next we have to run the container using this command:
 
-```jsx
-docker run -it --name <name of the container> -v "<local folder>:<folder in the image>" -e DISPLAY=host.docker.internal:0.0 -e LIBGL_ALWAYS_INDIRECT=0 <image name> bash
+```
+docker run -it --name ros_turtlebot -e DISPLAY=host.docker.internal:0.0 -e LIBGL_ALWAYS_INDIRECT=0 shankrith/path_planning:0.1 bash
 ```
 
 Now run 
 
-```jsx
+```
 roscore
 ```
 
@@ -79,14 +79,14 @@ to see if it works.
 1. Open Docker Desktop and a Powershell window.
 2. Open Powershell and run:
 
-```jsx
-docker start <container name>
+```
+docker start ros_turtlebot
 ```
 
 1. Next run:
 
 ```jsx
-docker exec –it <container name> bash
+docker exec –it ros_turtlebot bash
 ```
 
 1. For every additional terminal you open, it is sufficient to run the above command alone.
