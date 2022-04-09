@@ -21,7 +21,9 @@ It would be better if your PC had WSL2 support since it can be faster.
 - [ ]  Install the downloaded file with administrator privileges.
 - [ ]  (optional) follow the Interactive tutorial from the application for better understanding.
 
-Now that we have completed our Docker desktop installation, it is time for us to pull our course image to start the course.
+Now that we have completed our Docker desktop installation, it is time for us to pull our course image to start the course. 
+
+- [ ] Start docker by opening the desktop app.
 
 - [ ]  Open PowerShell by launching it via search
 
